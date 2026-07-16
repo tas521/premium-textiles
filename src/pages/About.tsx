@@ -1,6 +1,7 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import { ShieldCheck, Truck, RotateCcw, MapPin, Building, Landmark } from 'lucide-react';
+import silkPretPeach from '../assets/images/silk_pret_peach_1783907083187.jpg';
 
 export const About: React.FC = () => {
   const { setAuthModalOpen } = useApp();
@@ -38,7 +39,7 @@ export const About: React.FC = () => {
         <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-2xl border border-neutral-100 dark:border-neutral-850">
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/40 to-transparent z-10" />
           <img
-            src={new URL('../assets/images/silk_pret_peach_1783907083187.jpg', import.meta.url).href}
+            src={silkPretPeach}
             alt="Intricate traditional embroidery details"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

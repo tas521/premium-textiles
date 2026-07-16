@@ -19,13 +19,22 @@ import {
 import { DUMMY_PRODUCTS, DUMMY_REVIEWS } from '../data/products';
 import { ProductCard } from '../components/ProductCard';
 
+import luxeChiffonEmerald from '../assets/images/luxe_chiffon_emerald_1783907027572.jpg';
+import georgetteSuitBlue from '../assets/images/georgette_suit_blue_1783907105800.jpg';
+import royalOrganzaIvory from '../assets/images/royal_organza_ivory_1783907042264.jpg';
+import cottonNetMustard from '../assets/images/cotton_net_mustard_1783907093783.jpg';
+import velvetSuitRuby from '../assets/images/velvet_suit_ruby_1783907056741.jpg';
+import jamawarSuitCrimson from '../assets/images/jamawar_suit_crimson_1783907117113.jpg';
+import lawnSuitMint from '../assets/images/lawn_suit_mint_1783907068145.jpg';
+import silkPretPeach from '../assets/images/silk_pret_peach_1783907083187.jpg';
+
 export const Home: React.FC = () => {
   const { setAuthModalOpen } = useApp();
 
   // Hero slideshow state
   const heroSlides = [
     {
-      image: new URL('../assets/images/luxe_chiffon_emerald_1783907027572.jpg', import.meta.url).href,
+      image: luxeChiffonEmerald,
       tag: "Festive Autumn Luxury '26",
       title: "ROYAL CHIFFON DIRECTORY",
       subtitle: "Unveiling complete catalog sets curated with hand-woven tilla, kiran laces, and micro-pearl adornments.",
@@ -33,7 +42,7 @@ export const Home: React.FC = () => {
       link: "/shop?category=Chiffon"
     },
     {
-      image: new URL('../assets/images/royal_organza_ivory_1783907042264.jpg', import.meta.url).href,
+      image: royalOrganzaIvory,
       tag: "Pure Egyptian Pima Cotton",
       title: "PREMIUM DESIGNER LAWN",
       subtitle: "Ultra-fine long-staple cotton suits with digital silk dupatta combinations. High-density commercial packs.",
@@ -41,7 +50,7 @@ export const Home: React.FC = () => {
       link: "/shop?category=Lawn"
     },
     {
-      image: new URL('../assets/images/velvet_suit_ruby_1783907056741.jpg', import.meta.url).href,
+      image: velvetSuitRuby,
       tag: "Winter Bridal Elite Edition",
       title: "COUTURE MICRO-VELVET",
       subtitle: "Regal jewel-toned winter sets with heavy Kashmiri resham thread cuffs and laser-cut velvet applique work.",
@@ -89,10 +98,10 @@ export const Home: React.FC = () => {
 
   // Categories grid details
   const localCategories = [
-    { name: 'Lawn Cotton', count: '14 Catalogs', image: new URL('../assets/images/lawn_suit_mint_1783907068145.jpg', import.meta.url).href, filter: 'Lawn' },
-    { name: 'Pure Silk', count: '8 Catalogs', image: new URL('../assets/images/silk_pret_peach_1783907083187.jpg', import.meta.url).href, filter: 'Silk' },
-    { name: 'Luxury Chiffon', count: '12 Catalogs', image: new URL('../assets/images/luxe_chiffon_emerald_1783907027572.jpg', import.meta.url).href, filter: 'Chiffon' },
-    { name: 'Bridal Velvet', count: '6 Catalogs', image: new URL('../assets/images/velvet_suit_ruby_1783907056741.jpg', import.meta.url).href, filter: 'Velvet' }
+    { name: 'Lawn Cotton', count: '14 Catalogs', image: lawnSuitMint, filter: 'Lawn' },
+    { name: 'Pure Silk', count: '8 Catalogs', image: silkPretPeach, filter: 'Silk' },
+    { name: 'Luxury Chiffon', count: '12 Catalogs', image: luxeChiffonEmerald, filter: 'Chiffon' },
+    { name: 'Bridal Velvet', count: '6 Catalogs', image: velvetSuitRuby, filter: 'Velvet' }
   ];
 
   return (
@@ -419,7 +428,7 @@ export const Home: React.FC = () => {
             <div className="relative aspect-4/3 rounded-none overflow-hidden border border-neutral-800">
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-transparent to-transparent z-10" />
               <img
-                src={new URL('../assets/images/jamawar_suit_crimson_1783907117113.jpg', import.meta.url).href}
+                src={jamawarSuitCrimson}
                 alt="Embroidered gold fabrics closeup"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -505,12 +514,12 @@ export const Home: React.FC = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
-              new URL('../assets/images/luxe_chiffon_emerald_1783907027572.jpg', import.meta.url).href,
-              new URL('../assets/images/royal_organza_ivory_1783907042264.jpg', import.meta.url).href,
-              new URL('../assets/images/velvet_suit_ruby_1783907056741.jpg', import.meta.url).href,
-              new URL('../assets/images/lawn_suit_mint_1783907068145.jpg', import.meta.url).href,
-              new URL('../assets/images/silk_pret_peach_1783907083187.jpg', import.meta.url).href,
-              new URL('../assets/images/cotton_net_mustard_1783907093783.jpg', import.meta.url).href
+              luxeChiffonEmerald,
+              royalOrganzaIvory,
+              velvetSuitRuby,
+              lawnSuitMint,
+              silkPretPeach,
+              cottonNetMustard
             ].map((url, i) => (
               <div
                 key={i}

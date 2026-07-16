@@ -1,5 +1,14 @@
 import { Product, Review } from '../types';
 
+import luxeChiffonEmerald from '../assets/images/luxe_chiffon_emerald_1783907027572.jpg';
+import georgetteSuitBlue from '../assets/images/georgette_suit_blue_1783907105800.jpg';
+import royalOrganzaIvory from '../assets/images/royal_organza_ivory_1783907042264.jpg';
+import cottonNetMustard from '../assets/images/cotton_net_mustard_1783907093783.jpg';
+import velvetSuitRuby from '../assets/images/velvet_suit_ruby_1783907056741.jpg';
+import jamawarSuitCrimson from '../assets/images/jamawar_suit_crimson_1783907117113.jpg';
+import lawnSuitMint from '../assets/images/lawn_suit_mint_1783907068145.jpg';
+import silkPretPeach from '../assets/images/silk_pret_peach_1783907083187.jpg';
+
 export const DUMMY_PRODUCTS: Product[] = [
   {
     id: "prod-01",
@@ -22,8 +31,8 @@ export const DUMMY_PRODUCTS: Product[] = [
       careInstructions: "Dry clean only. Store in a soft cotton bag away from direct sunlight."
     },
     images: [
-      new URL('../assets/images/luxe_chiffon_emerald_1783907027572.jpg', import.meta.url).href,
-      new URL('../assets/images/georgette_suit_blue_1783907105800.jpg', import.meta.url).href
+      luxeChiffonEmerald,
+      georgetteSuitBlue
     ],
     sizes: ["Unstitched", "M (Pack of 4)", "L (Pack of 4)", "XL (Pack of 4)"],
     colours: [
@@ -59,8 +68,8 @@ export const DUMMY_PRODUCTS: Product[] = [
       careInstructions: "Professional dry clean only. Steam iron inside-out."
     },
     images: [
-      new URL('../assets/images/royal_organza_ivory_1783907042264.jpg', import.meta.url).href,
-      new URL('../assets/images/cotton_net_mustard_1783907093783.jpg', import.meta.url).href
+      royalOrganzaIvory,
+      cottonNetMustard
     ],
     sizes: ["Unstitched", "S (Pack of 5)", "M (Pack of 5)", "L (Pack of 5)"],
     colours: [
@@ -95,8 +104,8 @@ export const DUMMY_PRODUCTS: Product[] = [
       careInstructions: "Never hand-wash or press directly with a standard iron. Dry clean only."
     },
     images: [
-      new URL('../assets/images/velvet_suit_ruby_1783907056741.jpg', import.meta.url).href,
-      new URL('../assets/images/jamawar_suit_crimson_1783907117113.jpg', import.meta.url).href
+      velvetSuitRuby,
+      jamawarSuitCrimson
     ],
     sizes: ["Unstitched", "M (Pack of 3)", "L (Pack of 3)", "XL (Pack of 3)"],
     colours: [
@@ -104,8 +113,8 @@ export const DUMMY_PRODUCTS: Product[] = [
       { name: "Ocean Teal", hex: "#004753" },
       { name: "Royal Purple", hex: "#300e3a" }
     ],
-    rating: 5.0,
-    reviewsCount: 16,
+    rating: 4.9,
+    reviewsCount: 18,
     isNewArrival: false,
     isBestSeller: true,
     isTrending: true
@@ -131,8 +140,8 @@ export const DUMMY_PRODUCTS: Product[] = [
       careInstructions: "Wash with mild detergent. Do not bleach. Dry in shade."
     },
     images: [
-      new URL('../assets/images/lawn_suit_mint_1783907068145.jpg', import.meta.url).href,
-      new URL('../assets/images/silk_pret_peach_1783907083187.jpg', import.meta.url).href
+      lawnSuitMint,
+      silkPretPeach
     ],
     sizes: ["Unstitched", "M (Pack of 6)"],
     colours: [
@@ -168,8 +177,8 @@ export const DUMMY_PRODUCTS: Product[] = [
       careInstructions: "Dry clean only. Hang on wooden hangers to maintain structural shape."
     },
     images: [
-      new URL('../assets/images/silk_pret_peach_1783907083187.jpg', import.meta.url).href,
-      new URL('../assets/images/lawn_suit_mint_1783907068145.jpg', import.meta.url).href
+      silkPretPeach,
+      lawnSuitMint
     ],
     sizes: ["S (Pack of 4)", "M (Pack of 4)", "L (Pack of 4)", "XL (Pack of 4)"],
     colours: [
@@ -204,8 +213,8 @@ export const DUMMY_PRODUCTS: Product[] = [
       careInstructions: "Hand-wash gently with liquid detergent. Do not wring. Cool iron."
     },
     images: [
-      new URL('../assets/images/cotton_net_mustard_1783907093783.jpg', import.meta.url).href,
-      new URL('../assets/images/royal_organza_ivory_1783907042264.jpg', import.meta.url).href
+      cottonNetMustard,
+      royalOrganzaIvory
     ],
     sizes: ["Unstitched", "M (Pack of 4)", "L (Pack of 4)"],
     colours: [
@@ -240,8 +249,8 @@ export const DUMMY_PRODUCTS: Product[] = [
       careInstructions: "Dry clean only. Direct sunlight exposure should be avoided."
     },
     images: [
-      new URL('../assets/images/georgette_suit_blue_1783907105800.jpg', import.meta.url).href,
-      new URL('../assets/images/luxe_chiffon_emerald_1783907027572.jpg', import.meta.url).href
+      georgetteSuitBlue,
+      luxeChiffonEmerald
     ],
     sizes: ["Unstitched", "S (Pack of 4)", "M (Pack of 4)", "L (Pack of 4)"],
     colours: [
@@ -276,8 +285,8 @@ export const DUMMY_PRODUCTS: Product[] = [
       careInstructions: "Dry clean only. Professional steam pressing to prevent thread damage."
     },
     images: [
-      new URL('../assets/images/jamawar_suit_crimson_1783907117113.jpg', import.meta.url).href,
-      new URL('../assets/images/velvet_suit_ruby_1783907056741.jpg', import.meta.url).href
+      jamawarSuitCrimson,
+      velvetSuitRuby
     ],
     sizes: ["Unstitched", "M (Pack of 3)", "L (Pack of 3)", "XL (Pack of 3)"],
     colours: [
