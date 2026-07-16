@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@variant dark (.dark &);
+
+html {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* HIGH-CONTRAST READABILITY OVERRIDES FOR LIGHT MODE */
+html:not(.dark) {
+  --color-neutral-400: #4B5563; /* Deep neutral grey, was #a3a3a3 */
+  --color-neutral-500: #374151; /* Dark grey for readable body, was #737373 */
+  --color-neutral-600: #1F2937; /* Very dark slate, was #525252 */
+  --color-neutral-700: #111827; /* Near black for maximum contrast */
+  --color-neutral-800: #0B0F19;
+  --color-neutral-900: #030712;
+
+  --color-gray-400: #4B5563;
+  --color-gray-500: #374151;
+  --color-gray-600: #1F2937;
+  --color-gray-700: #111827;
+  --color-gray-800: #0B0F19;
+  --color-gray-900: #030712;
+}
+
+/* Overrides to prevent too-thin (light) and too-small fonts in light mode */
+html:not(.dark) .font-light {
+  font-weight: 400 !important; /* Upgrade light to normal for premium readability */
+}
+
+html:not(.dark) .font-normal {
+  font-weight: 450 !important; /* Give slightly more weight/substance to regular text */
+}
+
+/* Prevent ultra-tiny text from being unreadable */
+.text-\[8px\], .text-\[9px\] {
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+}
+
+.text-\[10px\] {
+  font-size: 12.5px !important;
+  font-weight: 500 !important;
+}
+
+.text-\[11px\] {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
+.text-xs {
+  font-size: 13px !important;
+}
+
+.text-sm {
+  font-size: 14.5px !important;
+}
+
+/* Custom global paragraph and body styles for superb readability */
+body {
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.01em;
+}
+
+/* HIGH-CONTRAST READABILITY OVERRIDES FOR DARK MODE & DARK CONTAINERS */
+.dark, .bg-neutral-950, footer {
+  --color-neutral-400: #CBD5E1 !important; /* Soft bright grey, was #a3a3a3 */
+  --color-neutral-500: #94A3B8 !important; /* Mid slate grey, was #737373 */
+  --color-neutral-600: #64748B !important; /* Muted slate grey, was #525252 */
+}
+
+.dark .text-neutral-400, footer .text-neutral-400, .bg-neutral-950 .text-neutral-400 {
+  color: #CBD5E1 !important;
+}
+
+.dark .text-neutral-500, footer .text-neutral-500, .bg-neutral-950 .text-neutral-500 {
+  color: #94A3B8 !important;
+}
+
+.dark .text-neutral-600, footer .text-neutral-600, .bg-neutral-950 .text-neutral-600 {
+  color: #64748B !important;
+}
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Custom Gold Accents from Clean Minimalism */
+  --color-gold-50: #FDFDFD;
+  --color-gold-100: #f7f4ea;
+  --color-gold-200: #eedeb4;
+  --color-gold-300: #e5c97c;
+  --color-gold-400: #dcbe54;
+  --color-gold-500: #D4AF37; /* Signature luxury gold */
+  --color-gold-600: #b9932a;
+  --color-gold-700: #9a7620;
+  --color-gold-800: #7b5b19;
+  --color-gold-900: #5c4113;
+  --color-gold-950: #3c2a0c;
+
+  /* Off-whites and rich dark text from Clean Minimalism */
+  --color-neutral-50: #FDFDFD;
+  --color-neutral-100: #F2F2F2;
+  --color-neutral-150: #EAEAEA;
+  --color-neutral-900: #1A1A1A;
+}
+
+/* Custom layout classes for Clean Minimalism */
+.glass {
+  background: rgba(253, 253, 253, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+.dark .glass {
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+.letter-spacing-wide {
+  letter-spacing: 0.15em;
+}
+
+.letter-spacing-wider {
+  letter-spacing: 0.25em;
+}
+
+.letter-spacing-widest {
+  letter-spacing: 0.35em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Luxury transitions */
+.transition-luxury {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Glow effects */
+.glow-gold {
+  box-shadow: 0 0 20px rgba(181, 137, 61, 0.15);
+}
+
+.dark .glow-gold {
+  box-shadow: 0 0 20px rgba(181, 137, 61, 0.3);
+}
+
+/* Keyframes for elegant fading */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

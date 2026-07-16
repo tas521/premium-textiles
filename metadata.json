@@ -1,0 +1,8 @@
+{
+  "name": "Premium Textiles",
+  "description": "Premium wholesale Pakistani suits e-commerce website featuring luxury designs, salwar kameez collections, lawn fabrics, and custom wholesale ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
