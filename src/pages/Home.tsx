@@ -25,7 +25,7 @@ export const Home: React.FC = () => {
   // Hero slideshow state
   const heroSlides = [
     {
-      image: "/src/assets/images/luxe_chiffon_emerald_1783907027572.jpg",
+      image: "assets/images/luxe_chiffon_emerald_1783907027572.jpg",
       tag: "Festive Autumn Luxury '26",
       title: "ROYAL CHIFFON DIRECTORY",
       subtitle: "Unveiling complete catalog sets curated with hand-woven tilla, kiran laces, and micro-pearl adornments.",
@@ -33,7 +33,7 @@ export const Home: React.FC = () => {
       link: "/shop?category=Chiffon"
     },
     {
-      image: "/src/assets/images/royal_organza_ivory_1783907042264.jpg",
+      image: "assets/images/royal_organza_ivory_1783907042264.jpg",
       tag: "Pure Egyptian Pima Cotton",
       title: "PREMIUM DESIGNER LAWN",
       subtitle: "Ultra-fine long-staple cotton suits with digital silk dupatta combinations. High-density commercial packs.",
@@ -41,7 +41,7 @@ export const Home: React.FC = () => {
       link: "/shop?category=Lawn"
     },
     {
-      image: "/src/assets/images/velvet_suit_ruby_1783907056741.jpg",
+      image: "assets/images/velvet_suit_ruby_1783907056741.jpg",
       tag: "Winter Bridal Elite Edition",
       title: "COUTURE MICRO-VELVET",
       subtitle: "Regal jewel-toned winter sets with heavy Kashmiri resham thread cuffs and laser-cut velvet applique work.",
@@ -89,10 +89,10 @@ export const Home: React.FC = () => {
 
   // Categories grid details
   const localCategories = [
-    { name: 'Lawn Cotton', count: '14 Catalogs', image: '/src/assets/images/lawn_suit_mint_1783907068145.jpg', filter: 'Lawn' },
-    { name: 'Pure Silk', count: '8 Catalogs', image: '/src/assets/images/silk_pret_peach_1783907083187.jpg', filter: 'Silk' },
-    { name: 'Luxury Chiffon', count: '12 Catalogs', image: '/src/assets/images/luxe_chiffon_emerald_1783907027572.jpg', filter: 'Chiffon' },
-    { name: 'Bridal Velvet', count: '6 Catalogs', image: '/src/assets/images/velvet_suit_ruby_1783907056741.jpg', filter: 'Velvet' }
+    { name: 'Lawn Cotton', count: '14 Catalogs', image: 'assets/images/lawn_suit_mint_1783907068145.jpg', filter: 'Lawn' },
+    { name: 'Pure Silk', count: '8 Catalogs', image: 'assets/images/silk_pret_peach_1783907083187.jpg', filter: 'Silk' },
+    { name: 'Luxury Chiffon', count: '12 Catalogs', image: 'assets/images/luxe_chiffon_emerald_1783907027572.jpg', filter: 'Chiffon' },
+    { name: 'Bridal Velvet', count: '6 Catalogs', image: 'assets/images/velvet_suit_ruby_1783907056741.jpg', filter: 'Velvet' }
   ];
 
   return (
@@ -419,7 +419,7 @@ export const Home: React.FC = () => {
             <div className="relative aspect-4/3 rounded-none overflow-hidden border border-neutral-800">
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-transparent to-transparent z-10" />
               <img
-                src="/src/assets/images/jamawar_suit_crimson_1783907117113.jpg"
+                src="assets/images/jamawar_suit_crimson_1783907117113.jpg"
                 alt="Embroidered gold fabrics closeup"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -505,12 +505,12 @@ export const Home: React.FC = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
-              "/src/assets/images/luxe_chiffon_emerald_1783907027572.jpg",
-              "/src/assets/images/royal_organza_ivory_1783907042264.jpg",
-              "/src/assets/images/velvet_suit_ruby_1783907056741.jpg",
-              "/src/assets/images/lawn_suit_mint_1783907068145.jpg",
-              "/src/assets/images/silk_pret_peach_1783907083187.jpg",
-              "/src/assets/images/cotton_net_mustard_1783907093783.jpg"
+              "assets/images/luxe_chiffon_emerald_1783907027572.jpg",
+              "assets/images/royal_organza_ivory_1783907042264.jpg",
+              "assets/images/velvet_suit_ruby_1783907056741.jpg",
+              "assets/images/lawn_suit_mint_1783907068145.jpg",
+              "assets/images/silk_pret_peach_1783907083187.jpg",
+              "assets/images/cotton_net_mustard_1783907093783.jpg"
             ].map((url, i) => (
               <div
                 key={i}
